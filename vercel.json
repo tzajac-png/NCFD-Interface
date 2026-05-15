@@ -6,10 +6,7 @@
       "destination": "https://docs.google.com/:path*"
     },
     {
-      "handle": "filesystem"
-    },
-    {
-      "source": "/:path*",
+      "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }
   ]
