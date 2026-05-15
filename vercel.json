@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/gdoc-csv/:path*",
+      "destination": "https://docs.google.com/:path*"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Proxy link-shared Google Sheet CSV export (same path the app uses in dev via Vite).
+[[redirects]]
+  from = "/gdoc-csv/*"
+  to = "https://docs.google.com/:splat"
+  status = 200
+  force = true
+
